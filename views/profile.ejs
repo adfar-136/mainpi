@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>EdTech Landing Page</title>
+    <link rel="stylesheet" href="/css/profile.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+          <li><a href="/fsd">Full Stack Development</a></li>
+          <li><a href="/datascience">Data Science</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/earn">Refer and Earn</a></li>
+
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/logout" class="login-button">Logout</a>
+        </div>
+      </div>
+    </header>
+    <section class="section">
+      <div class="profile-info">
+        <div class="user-details">
+          <div class="user-image">
+            <img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              alt="User Profile Image"
+              class="image"
+            />
+            <div class="overlay" onclick="editField('profileImage')">
+              Update Profile Pic
+            </div>
+          </div>
+          <div class="user-text">
+            <h1><%= user.name %></h1>
+            <div class="editable-field">
+              <span><b>Email:</b> <%= user.username %></span>
+            </div>
+            <div class="editable-field">
+              <span
+                ><b>Address:</b> <%= user.address %>
+                <i
+                  class="fas fa-pen edit-icon"
+                  onclick="editField('address')"
+                ></i
+              ></span>
+            </div>
+            <div class="editable-field">
+              <span
+                ><b>Phone Number:</b> <%= user.phoneNumber %>
+                <i
+                  class="fas fa-pen edit-icon"
+                  onclick="editField('phoneNumber')"
+                ></i
+              ></span>
+            </div>
+            <!-- Display new fields -->
+            <div class="editable-field">
+              <span
+                ><b>About:</b> <%= user.about %>
+                <i class="fas fa-pen edit-icon" onclick="editField('about')"></i
+              ></span>
+            </div>
+            <!-- <div class="editable-field ">
+              <span><b>Education:</b> <%= user.education.degree %> at <%=
+                user.education.school %> <i
+                class="fas fa-pen edit-icon"
+                onclick="editField('education')"
+              ></i></span
+              >
+              
+            </div> -->
+            <div class="editable-field">
+              <span
+                ><b>Skills:</b>
+                <i
+                  class="fas fa-pen edit-icon"
+                  onclick="editField('skills')"
+                ></i
+              ></span>
+              <div class="user-card">
+                <% if (user.skills && user.skills.length > 0) { %>
+                <ul id="skills-list">
+                  <% user.skills.forEach(skill => { %>
+                  <li><%= skill.toUpperCase() %></li>
+                  <% }); %>
+                </ul>
+                <% } else { %>
+                <p>No skills available.</p>
+                <% } %>
+              </div>
+            </div>
+
+            <div class="editable-field">
+              <span
+                ><b>Interests:</b>
+                <i
+                  class="fas fa-pen edit-icon"
+                  onclick="editField('interests')"
+                ></i
+              ></span>
+              <div class="user-card" id="interests-card">
+                <% if (user.interests && user.interests.length > 0) { %>
+                <ul id="interests-list">
+                  <% user.interests.forEach(interest => { %>
+                  <li><%= interest.toUpperCase() %></li>
+                  <% }); %>
+                </ul>
+                <% } else { %>
+                <p>No interests available.</p>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="edit-profile-form" class="edit-form">
+          <form method="post" enctype="multipart/form-data">
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              id="address-input"
+              class="inputele"
+            />
+            <input
+              type="text"
+              name="phoneNumber"
+              placeholder="Phone Number"
+              id="phoneNumber-input"
+              class="inputele"
+            />
+            <input
+              type="text"
+              name="about"
+              placeholder="About"
+              id="about-input"
+              class="inputele"
+            />
+            <!-- <div id="education-input" class="inputele">
+              <input
+              type="text"
+              name="education[degree]"
+              placeholder="Degree"
+              
+              
+            />
+            <input
+              type="text"
+              name="education[school]"
+              placeholder="School/University"
+            />
+            <input
+              type="number"
+              name="education[graduationYear]"
+              placeholder="Graduation Year"
+            />
+            </div> -->
+            <input
+              type="text"
+              name="skills"
+              placeholder="Skills (comma-separated)"
+              id="skills-input"
+              class="inputele"
+            />
+            <input
+              type="text"
+              name="interests"
+              placeholder="Interests (comma-separated)"
+              id="interests-input"
+              class="inputele"
+            />
+
+            <input
+              type="file"
+              name="profileImage"
+              id="profileImage-input"
+              class="inputele"
+            />
+            <!-- Add other input fields for additional information as needed -->
+            <button type="submit" id="update-profile-button">
+              Update Profile
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="/js/profile.js"></script>
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/signup.css" />
+  <title>EdTech Landing Page</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/fsd">Full Stack Development</a></li>
+          <li><a href="/datascience">Data Science</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/earn">Refer and Earn</a></li>
+
+        </ul>
+      </nav>
+      <div class="header-buttons">
+        <a href="/signup" class="login-button">Signup</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="landing-section section">
+    <div class="container">
+      <div class="info-section">
+        <h2>
+          Unlocking Opportunities <br />
+          in Kashmir
+        </h2>
+        <p>
+          Our programs are designed to empower the youth of Kashmir
+            
+          <br />Join us to make a difference in your career and
+          community.
+          <br /><br />
+          <strong>Benefits for students:</strong>
+          <ul>
+            <li>Study now, pay after getting placed</li>
+            <li>For B.Tech and BCA graduates</li>
+            <li>Only for graduates of 2021 and later</li>
+            <li>Flexible duration of up to 9 months</li>
+            <li>Project-based live learning</li>
+            <li>Receive study materials and resources</li>
+            <li>Access to a supportive learning community</li>
+          </ul>
+        </p>
+      </div>
+      <div class="registration-section">
+        <div class="registration-form">
+          <h2>Login to your account</h2>
+          <p>
+            Welcome back! Login now to pick up where you left off in your educational journey.
+          </p>
+          <% if (errorMessage) { %>
+            <p class="error-message"><%= errorMessage %></p>
+          <% } %>
+          
+          <form method="post">
+            <input type="email" placeholder="Email" name="username" />
+            <input type="password" placeholder="Password" name="password" />
+            <button class="registration-button">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/68129f478c.js" crossorigin="anonymous"></script>
+</body>
+</html>

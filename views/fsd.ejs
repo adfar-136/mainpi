@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/fsd.css" />
+    <title>EdTech Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/earn">Refer and Earn</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+      </div>
+    </header>
+    <section class="fsd-landing section">
+      <div class="top-section">
+        <div class="left-description">
+          <p class="fsd-title">
+            Master Frontend and Backend Development with Kashmir's first
+            placement program.
+          </p>
+          <h1 class="fsd-heading">
+            Kashmir First Placement <br />
+            Full Stack Web <br />Development Program
+          </h1>
+          <div class="fsd-rating">
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-stars">
+              ✅✅✅✅✅ <br />
+              Get Started Today
+            </div>
+          </div>
+          <button class="apply-now">Apply Now</button>
+        </div>
+        <div class="right-description">
+          <div class="right-card-description">
+            <h3>Book Your Free Masterclass Now</h3>
+            <p>
+              Establishing partnerships with tech companies for job placements.
+            </p>
+          </div>
+          <form method="post" class="contact-form">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your Full Name"
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="form-input"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phoneNumber"
+              placeholder="Enter your mobile number"
+              class="form-input"
+            />
+            <p>
+              By clicking Sign Up, you agree to our
+              <a href="">Terms & Conditions</a>
+            </p>
+            <button type="submit" class="get-in-touch-button">
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+      </div>
+    </section>
+    <section class="unique-features-section">
+      <h1 class="title">What Makes Our Course Unique?</h1>
+      <div class="row">
+        <div class="card card1">
+          <div class="card-icon">
+            <i class="fas fa-chalkboard-teacher icon"></i>
+          </div>
+          <h3 class="card-title">Experienced Instructors</h3>
+          <p class="card-description">
+            Industry experts,
+            <i class="fab fa-google"></i> Google,
+            <i class="fab fa-microsoft"></i> Microsoft, and many more .....
+          </p>
+        </div>
+
+        <div class="card card2">
+          <i class="fas fa-code-branch icon"></i>
+          <h3 class="card-title">Project-Based Learning</h3>
+          <p class="card-description">Hands-on projects, real challenges.</p>
+        </div>
+
+        <div class="card card3">
+          <i class="fas fa-certificate icon"></i>
+          <h3 class="card-title">Industry-Recognized Certification</h3>
+          <p class="card-description">Valid certification, career boost.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card card4">
+          <i class="fas fa-laptop icon"></i>
+          <h3 class="card-title">Interactive Online Platform</h3>
+          <p class="card-description">Engaging platform, rich resources.</p>
+        </div>
+
+        <div class="card card5">
+          <i class="fas fa-comments icon"></i>
+          <h3 class="card-title">Live Support</h3>
+          <p class="card-description">Instantly solve doubts with live chat.</p>
+        </div>
+
+        <div class="card card6">
+          <i class="fas fa-graduation-cap icon"></i>
+          <h3 class="card-title">Career Guidance</h3>
+          <p class="card-description">Personalized guidance, career success.</p>
+        </div>
+      </div>
+    </section>
+    <section class="fee-section">
+      <h1 class="fee-heading">FEE Structure</h1>
+      <div class="fee-cards">
+        <!-- Job Placement Card -->
+        <div class="fee-card">
+          <i class="fas fa-briefcase"></i>
+          <h2>Job Placement</h2>
+          <p>For graduates looking for job placement</p>
+          <p>Fee: ₹50,000 | EMI: ₹4,000</p>
+    
+          <ul class="fee-description">
+            <li><i class="fas fa-check"></i> Meticulously crafted for recent graduates</li>
+            <li><i class="fas fa-check"></i> Available for graduates in any field</li>
+            <li><i class="fas fa-check"></i> Tailored for individuals actively seeking job placement</li>
+            <li><i class="fas fa-check"></i> Comprehensive curriculum and personalized support</li>
+            <li><i class="fas fa-check"></i> 100% placement assistance for a successful career</li>
+            <li><i class="fas fa-check"></i> Proper mentorship to guide your career journey</li>
+            <li><i class="fas fa-check"></i> Resume building assistance for a professional edge</li>
+          </ul>
+    
+          <a href="#jobPlacement">Enroll</a>
+        </div>
+    
+        <!-- Upskill - College Card -->
+        <div class="fee-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h2>Upskill - College</h2>
+          <p>For current university/college students</p>
+          <p>Fee: ₹35,000 | EMI: ₹3,000</p>
+    
+          <ul class="fee-description">
+            <li><i class="fas fa-check"></i> Tailored for current university or college students</li>
+            <li><i class="fas fa-check"></i> Empowers you to enhance your skill set</li>
+            <li><i class="fas fa-check"></i> Comprehensive and flexible learning experience</li>
+            <li><i class="fas fa-check"></i> Designed to align with your academic journey</li>
+            <li><i class="fas fa-check"></i> Provides the tools and knowledge for success</li>
+            <li><i class="fas fa-check"></i> Explore new opportunities during your education</li>
+            <li><i class="fas fa-check"></i> Prepare for the dynamic job market with confidence</li>
+          </ul>
+          
+    
+          <a href="#upskillCollege">Enroll</a>
+        </div>
+    
+        <!-- Upskill - Professional Card -->
+        <div class="fee-card">
+          <i class="fas fa-user-tie"></i>
+          <h2>Upskill - Professional</h2>
+          <p>For working professionals</p>
+          <p>Fee: ₹60,000 | EMI: ₹6,000</p>
+    
+          <ul class="fee-description">
+            <li><i class="fas fa-check"></i> Tailored for working professionals</li>
+            <li><i class="fas fa-check"></i> Ideal for those seeking a better job or upskilling</li>
+            <li><i class="fas fa-check"></i> Stay competitive and advance your career</li>
+            <li><i class="fas fa-check"></i> Comprehensive curriculum and expert guidance</li>
+            <li><i class="fas fa-check"></i> Acquire the skills necessary to excel in your field</li>
+            <li><i class="fas fa-check"></i> Specialized program designed for 100% placement</li>
+            <li><i class="fas fa-check"></i> Unlock new career prospects with confidence</li>
+          </ul>
+          
+          <a href="#upskillProfessional">Enroll</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="course-outcomes section">
+      <div class="frontend-outcomes">
+        <h2>Front-End Outcomes</h2>
+        <ul>
+          <li><i class="fab fa-html5"></i> Strong foundation in HTML</li>
+          <li><i class="fab fa-css3"></i> Proficiency in CSS styling</li>
+          <li><i class="fab fa-js"></i> Mastery of JavaScript fundamentals</li>
+          <li><i class="fab fa-react"></i> Building dynamic UIs with React</li>
+
+          <li>
+            <i class="fas fa-laptop-code"></i> Responsive web design principles
+          </li>
+          <li>
+            <i class="fas fa-comments"></i> Effective collaboration using
+            JavaScript and React
+          </li>
+          <li>
+            <i class="fas fa-chart-line"></i> Performance optimization for web
+            applications
+          </li>
+
+          <li>
+            <i class="fas fa-code"></i> Version control with Git and GitHub
+          </li>
+          <li>
+            <i class="fas fa-desktop"></i> Cross-browser compatibility testing
+          </li>
+        </ul>
+      </div>
+      <div class="backend-outcomes">
+        <h2>Back-End Outcomes</h2>
+        <ul>
+          <li>
+            <i class="fas fa-server"></i> Server-side scripting proficiency
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Database design and management
+            skills
+          </li>
+          <li>
+            <i class="fas fa-code"></i> Server-side programming languages
+            expertise (e.g., Node.js, Python, Ruby)
+          </li>
+          <li><i class="fas fa-network-wired"></i> RESTful API development</li>
+
+          <li>
+            <i class="fas fa-terminal"></i> Command-line interface proficiency
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Data modeling and schema design
+          </li>
+
+          <li>
+            <i class="fas fa-terminal"></i> Deployment and server management
+          </li>
+          <li>
+            <i class="fas fa-cogs"></i> Integration with front-end technologies
+          </li>
+          <li>
+            <i class="fas fa-bug"></i> Debugging and troubleshooting skills
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="full-stack-section">
+      <h1 class="title">Why Choose MERN Full Stack Development?</h1>
+      <div class="row">
+        <div class="card card1">
+          <i class="fab fa-react icon"></i>
+          <h3 class="card-title">The Future of Full Stack Development</h3>
+          <p class="card-description">
+            Embrace MERN stack for modern web apps.
+          </p>
+        </div>
+
+        <div class="card card2">
+          <i class="fas fa-code icon"></i>
+          <h3 class="card-title">Reshaping Web Development</h3>
+          <p class="card-description">Transform experiences with MERN stack.</p>
+        </div>
+
+        <div class="card card3">
+          <i class="fas fa-laptop-code icon"></i>
+          <h3 class="card-title">Career Longevity in MERN</h3>
+          <p class="card-description">
+            Master MERN for innovation and relevance.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card card4">
+          <i class="fas fa-dollar-sign icon"></i>
+          <h3 class="card-title">High Earning Potential</h3>
+          <p class="card-description">
+            Unlock financial opportunities with MERN.
+          </p>
+        </div>
+
+        <div class="card card5">
+          <i class="fas fa-chart-line icon"></i>
+          <h3 class="card-title">Steer Your Career</h3>
+          <p class="card-description">
+            Navigate demand and innovation in MERN.
+          </p>
+        </div>
+
+        <div class="card card6">
+          <i class="fas fa-users icon"></i>
+          <h3 class="card-title">Most Demanded Skills</h3>
+          <p class="card-description">
+            Pursue high-demand roles in MERN stack.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h1 class="road-heading">FSD Journey</h1>
+      <div class="layout-container">
+        <div class="timeline-buttons">
+          <button id="htmlBtn" class="selected" onclick="showContent('html')">
+            HTML
+          </button>
+          <button id="cssBtn" onclick="showContent('css')">CSS</button>
+          <button id="jsBtn" onclick="showContent('js')">JavaScript</button>
+          <button id="reactBtn" onclick="showContent('react')">React</button>
+          <button id="nodeBtn" onclick="showContent('node')">Node.js</button>
+          <button id="expressBtn" onclick="showContent('express')">
+            Express.js + MongoDB
+          </button>
+          <button id="dsaBtn" onclick="showContent('dsa')">DSA</button>
+          <button id="interviewBtn" onclick="showContent('interview')">
+            Interview Prep
+          </button>
+        </div>
+        <div class="timeline-pages" id="contentContainer"></div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="section-header">
+        <h1 class="title">Course Services</h1>
+        <p class="section-description">
+          Upskilling and preparing you to be a solid engineer. We help with job
+          search and interview preparation too!
+        </p>
+      </div>
+
+      <div class="service-cards">
+        <div class="service-card">
+          <i class="fas fa-briefcase service-icon"></i>
+          <h3 class="service-title">Job Opportunities</h3>
+          <p class="service-description">
+            Access job opportunities from our 100+ employer partners.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-users service-icon"></i>
+          <h3 class="service-title">Community Networking</h3>
+          <p class="service-description">
+            Exchange job opportunities with our extensive 20K+ Tech student
+            community.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-comments service-icon"></i>
+          <h3 class="service-title">Mock Interviews</h3>
+          <p class="service-description">
+            Practice mock interviews with people working in the industry.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-file-alt service-icon"></i>
+          <h3 class="service-title">Resume & LinkedIn Optimization</h3>
+          <p class="service-description">
+            Optimize your resume & LinkedIn profile with our experienced
+            experts.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <h1 class="faq-heading">Frequently Asked Questions</h1>
+    
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <h2>When are the live classes held?</h2>
+        <p>Live classes are normally held 2 times a week, with the exact class days and timings being determined by the batch. However, given all learners would be software engineers that are currently working, the classes would be held in the late evening or night on weekdays and any suitable time over the weekends.</p>
+      </div>
+    
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <h2>What happens if I miss a lecture in this online full-stack developer course?</h2>
+        <p>All lectures are recorded, and you will have access to the recordings after the lecture is completed.</p>
+      </div>
+    
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <h2>Can I attend this full-stack developer training part-time?</h2>
+        <p>The program has a fixed schedule, during which you would attend live-lectures with a dedicated instructor, Teaching Assistant, and personal mentor. A 15-hour weekly commitment is required for the duration of the program to achieve positive results.</p>
+      </div>
+    
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <h2>Are full-stack developers in demand in 2023?</h2>
+        <p>A full-stack developer is one of the high-demand jobs in the industry. Companies pay them handsomely since they contribute the most to software projects. Whether you are a fresher or an experienced developer, you will always be in demand in the software industry, with great opportunities waiting for you.</p>
+      </div>
+    
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <h2>Will I get a full-stack developer certification?</h2>
+        <p>After the end of the full-stack developer course, you will receive a course completion certificate.</p>
+      </div>
+    
+      <!-- FAQ 6 -->
+      <div class="faq-item">
+        <h2>Can I enroll only in the full-stack module of the EduPiSchool Academy Program?</h2>
+        <p>No, we feel that before jumping into a full-stack module, you must learn the basics of programming, CS fundamentals, and Data Structures & Algorithms. These skills are essential to have before you can begin with a full-stack specialization.</p>
+      </div>
+    
+      <!-- FAQ 7 -->
+      <div class="faq-item">
+        <h2>What are the roles and responsibilities of a Full Stack Developer?</h2>
+        <ul>
+          <li>Designing user interactions on websites</li>
+          <li>Developing servers and databases for website functionality</li>
+          <li>Coding for mobile platforms</li>
+          <li>Designing & developing APIs</li>
+        </ul>
+      </div>
+    
+      <!-- FAQ 8 -->
+      <div class="faq-item">
+        <h2>What is the average salary for a Full Stack developer?</h2>
+        <p>According to Glassdoor, the average salary for Full Stack Developers is INR 5,50000 per year in India. Full Stack Developers earn an average salary of USD 98,524 in the United States. For more detailed information, you can visit this blog.</p>
+      </div>
+    
+      <!-- FAQ 9 -->
+      <div class="faq-item">
+        <h2>How are Full stack developers different from software engineers?</h2>
+        <p>While Full Stack Developers focus on web applications, Software Engineers specialize in native apps. And while the term Software Engineer is broad and could mean a variety of things, a Full Stack Developer's skill set is laser-focused on web development.</p>
+      </div>
+    
+      <!-- FAQ 10 -->
+      <div class="faq-item">
+        <h2>Is full-stack web development difficult to learn?</h2>
+        <p>Full-stack developers possess a wide range of abilities and are expected to have comprehensive programming knowledge. But it's definitely possible to learn these skills with dedication and practice.</p>
+      </div>
+    
+      <!-- FAQ 11 -->
+      <div class="faq-item">
+        <h2>What level of coding proficiency is necessary to be successful as a full stack web developer?</h2>
+        <p>Full Stack Developers must be extremely versatile, with in-depth knowledge of HTML, CSS, and JavaScript. Also, should be familiar with server-side languages such as Python, Ruby, or Node.js.</p>
+      </div>
+    
+      <!-- FAQ 12 -->
+      <div class="faq-item">
+        <h2>Do all sections start at the same time?</h2>
+        <p>Yes, all sections start at the same time but end at different times, depending on the duration of the course for that section. The Advanced section ends in 9 months, the Intermediate section ends in 11 months, and the Beginner section ends in 13 months.</p>
+      </div>
+    
+      <!-- FAQ 13 -->
+      <div class="faq-item">
+        <h2>Should I join the Beginner, Intermediate, or Advanced section of this Full-stack developer program?</h2>
+        <p>Your eligibility for the Beginner, Intermediate, or Advanced section is decided based on an entrance test.</p>
+      </div>
+    
+      <!-- FAQ 14 -->
+      <div class="faq-item">
+        <h2>What is the duration of this full-stack developer course?</h2>
+        <p>Depending on which section you are allotted, the duration of the course could range from 9 to 13 months.</p>
+      </div>
+    
+      <!-- FAQ 15 -->
+      <div class="faq-item">
+        <h2>What is the format of the initial 30 min test?</h2>
+        <p>The test will comprise Multiple Choice Questions (MCQs) on topics like Logical reasoning and aptitude, Basic mathematics, Basic time complexity analysis, and questions on figuring out the outputs of small code snippets (in any of C++/Java/Python).</p>
+      </div>
+    
+      <!-- FAQ 16 -->
+      <div class="faq-item">
+        <h2>Can this test be taken on mobile?</h2>
+        <p>Yes! We have designed the test so that it can be easily taken on mobile as well. However, for the best results, we would advise you to take the test in a quiet setting with minimal disruptions.</p>
+      </div>
+    
+      <!-- FAQ 17 -->
+      <div class="faq-item">
+        <h2>Do I need to prepare for this initial 30 min test?</h2>
+        <p>No, you do not need any special preparation for this test. However, if you would like, you could brush up on simple concepts like arrangement, derangement, and a few simple aptitude questions.</p>
+      </div>
+    
+      <!-- FAQ 18 -->
+      <div class="faq-item">
+        <h2>What is the role of the tutor in this course?</h2>
+        <p>Our tutors would teach you the concepts mentioned in the course curriculum and would take live classes 3 times a week. There would be different tutors teaching different topics.</p>
+      </div>
+    
+      <!-- FAQ 19 -->
+      <div class="faq-item">
+        <h2>What are the profiles of the tutors?</h2>
+        <p>Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. They have hands-on, real-life experience and don't just have theoretical knowledge. For more detail on our tutors, please visit </p>
+      </div>
+    
+      <!-- FAQ 20 -->
+      <div class="faq-item">
+        <h2>How will my doubts get solved?</h2>
+        <p>We have 100+ Teaching Assistants that would solve your doubts promptly. These doubts could be related to the class content or regarding the assignments.</p>
+      </div>
+    
+      <!-- FAQ 21 -->
+      <div class="faq-item">
+        <h2>What is the role of the Teaching Assistant?</h2>
+        <p>Teaching Assistants (TAs) work closely with the tutors to help students with their assignments and homework. They answer students' doubts via chat and video call. You would interact with TAs regularly outside of the live-class sessions to get more hands-on problem-solving experience.</p>
+      </div>
+    
+      <!-- FAQ 22 -->
+      <div class="faq-item">
+        <h2>What are the profiles of the Teaching Assistant?</h2>
+        <p>Teaching Assistants (TAs) mostly come from strong problem-solving backgrounds. They can be from a range of experiences but share a common interest in coding and teaching alike.</p>
+      </div>
+    
+      <!-- FAQ 23 -->
+      <div class="faq-item">
+        <h2>How many Teaching Assistants are allotted per batch?</h2>
+        <p>2 Teaching Assistants (TAs) are allotted per batch of 40-50 students. This ensures each student gets enough time with their TA and gets their queries resolved instantly.</p>
+      </div>
+    
+      <!-- FAQ 24 -->
+      <div class="faq-item">
+        <h2>What is the process of resolving doubts?</h2>
+        <p>When a student has a doubt, he/she would raise a 'Help Request.' This 'Help Request' would be circulated within the peer group first to foster a sense of giving back and create a sense of community. In parallel, the Teaching Assistant is also alerted with regards to this 'Help Request.' The doubt can then be either clarified via the peer group or via the Teaching Assistants via text or via video call. If a video call is done, the Teaching Assistant can also share his/her screen to resolve the issue and help you understand the concept better. These video calls are done 1:1.</p>
+      </div>
+    
+      <!-- FAQ 25 -->
+      <div class="faq-item">
+        <h2>What are the prerequisites for enrolling in this full-stack web developer course?</h2>
+        <p>No, you do not need any prerequisites to enroll in this full-stack web developer program. It caters to both beginners and experienced professionals seeking to enhance their web development skills. However, there will be a 30 min initial MCQ test where your basics will be checked.</p>
+      </div>
+    
+      <!-- FAQ 26 -->
+      <div class="faq-item">
+        <h2>What is the role of the mentor?</h2>
+        <p>Mentors provide personalized advice on your career. They also help you with mock interviews, help with your resume, and provide career advice. Mentors do 1:1 video calls with you for 30-60 mins each for each session. It is advisable to do 2 mentor sessions every month.</p>
+      </div>
+    
+      <!-- FAQ 27 -->
+      <div class="faq-item">
+        <h2>What are the profiles of the mentors?</h2>
+        <p>Our mentors mostly work at tier 1 product companies and would be experienced software professionals. For more information, please visit </p>
+      </div>
+    
+      <!-- FAQ 28 -->
+      <div class="faq-item">
+        <h2>How many mentors are allotted per batch?</h2>
+        <p>Based on your background, we offer a few mentors for you to choose from at the beginning of the course. You could choose 1 mentor of your choice from this pool. We try to ensure that your mentor is relatable to your background.</p>
+      </div>
+    
+      <!-- FAQ 29 -->
+      <div class="faq-item">
+        <h2>Can I change my mentor?</h2>
+        <p>We would entertain a request to change a mentor, but a change in mentor is done only on a case-by-case basis.</p>
+      </div>
+    
+      <!-- FAQ 30 -->
+      <div class="faq-item">
+        <h2>What kind of placement support will I be given?</h2>
+        <p>We provide three kinds of placement support once you complete this full-stack course
+        </div>
+
+      
+</section>    
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#">Automation</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/fsd.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 80%;
+  max-width: 900px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.user-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  grid-row: span 2;
+}
+
+.user-image img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.user-card{
+  background-color: #ddd;
+  padding: 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-left:30px ;
+}
+.user-image:hover .overlay {
+  opacity: 1;
+}
+
+.user-text {
+  grid-column: span 1;
+}
+.user-text h1{
+  margin-bottom: 15px;
+}
+.editable-field {
+  margin-bottom: 20px;
+  text-align: left;
+  
+}
+
+.editable-field span {
+  font-size: 22px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #0077cc;
+  transition: color 0.3s;
+}
+
+.edit-icon:hover {
+  color: #005580;
+}
+
+.edit-form {
+  margin-left: 30px;
+  margin-top: 20px;
+  grid-column: span 2;
+}
+
+.inputele {
+  display: none;
+  width: 600px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.inputele:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.edit-form button {
+  background-color: #0077cc;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-form button:hover {
+  background: #005580;
+}
+
+.edit-profile-section {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards 0.3s;
+}
+
+.edit-form button:disabled {
+  background-color: #ddd;
+  color: #777;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

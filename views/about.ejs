@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <title>EdTech Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/earn">Refer and Earn</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+      </div>
+    </header>
+
+    <section class="about-us-section section">
+      <div class="container">
+        <div class="about-container">
+          <div class="about-content">
+            <h1 class="about-heading">Welcome to EduPiSchool</h1>
+            <p class="about-description">
+              EduPiSchool is on a mission to transform education in Kashmir. We
+              focus on providing high-quality learning experiences, skill
+              development, and career guidance to empower students for success
+              in the ever-evolving tech industry.
+            </p>
+            <p class="about-description">
+              Our innovative curriculum, expert instructors, and personalized
+              mentorship set us apart. We believe in practical, hands-on
+              learning that equips students with real-world skills, making them
+              industry-ready from day one.
+            </p>
+            <button class="explore-button big-button">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="about-image">
+            <img
+              src="/uploads/adfar.jpg"
+              alt="EduPiSchool Image"
+              class="about-us-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section section">
+      <h2 class="section-heading">Why Choose EduPiSchool?</h2>
+      <div class="features-container">
+        <div class="feature-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3 class="feature-title">Expert Instructors</h3>
+          <p class="feature-description">
+            Learn from industry experts with a passion for teaching and
+            practical experience in their respective fields.
+          </p>
+          <p class="feature-description">
+            Learn from industry experts with a passion for teaching and
+            practical experience in their respective fields.
+          </p>
+          <p class="feature-description">
+            Learn from industry experts with a passion for teaching and
+            practical experience in their respective fields.
+          </p>
+          <p class="feature-description">
+            Learn from industry experts with a passion for teaching and
+            practical experience in their respective fields.
+          </p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3 class="feature-title">Hands-on Learning</h3>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-certificate"></i>
+          <h3 class="feature-title">Recognized Certificates</h3>
+          <p class="feature-description">
+            Earn certificates that are recognized by top companies, showcasing
+            your skills and expertise.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+          <p class="feature-description">
+            Gain practical, hands-on experience through projects, assignments,
+            and real-world scenarios.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="problem-solution-section section">
+      <h2 class="section-heading">Challenges in Kashmir</h2>
+      <div class="problem-solution-container">
+        <div class="problem-card">
+          <h3 class="card-title">The Challenge</h3>
+          <p class="card-description">
+            Kashmir faces a significant gap in technical skills, leading to high
+            unemployment rates. The demand for skilled professionals far exceeds
+            the available workforce.
+          </p>
+          <p class="card-description">
+            According to recent data, a large portion of the youth lacks access
+            to quality education and relevant training programs, hindering their
+            employability in the modern job market.
+          </p>
+          <p class="card-description">
+            Kashmir faces a significant gap in technical skills, leading to high
+            unemployment rates. The demand for skilled professionals far exceeds
+            the available workforce.
+          </p>
+          <p class="card-description">
+            According to recent data, a large portion of the youth lacks access
+            to quality education and relevant training programs, hindering their
+            employability in the modern job market.
+          </p>
+        </div>
+        <div class="solution-card">
+          <h3 class="card-title">Our Solution</h3>
+          <p class="card-description">
+            EduPiSchool is committed to bridging the skills gap in Kashmir. We
+            provide industry-relevant education and hands-on training to equip
+            students with the skills demanded by the tech industry.
+          </p>
+          <p class="card-description">
+            By offering practical courses, mentorship programs, and connecting
+            students with industry professionals, we aim to empower the youth of
+            Kashmir, making them valuable contributors to the workforce.
+          </p>
+          <p class="card-description">
+            EduPiSchool is committed to bridging the skills gap in Kashmir. We
+            provide industry-relevant education and hands-on training to equip
+            students with the skills demanded by the tech industry.
+          </p>
+          <p class="card-description">
+            By offering practical courses, mentorship programs, and connecting
+            students with industry professionals, we aim to empower the youth of
+            Kashmir, making them valuable contributors to the workforce.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#">Automation</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

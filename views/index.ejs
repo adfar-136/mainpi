@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>EdTech Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <div class="hamburger">&#8801;</div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/earn">Refer and Earn</a></li>
+
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+        
+      </div>
+    </header>
+    
+      <div class="frame">
+        <div class="overlap">
+            <img class="group" src="/uploads/img/Group1.png" />
+            <div class="overlap-group-wrapper">
+                <div class="overlap-group"><div class="text-wrapper">Get started for free</div></div>
+            </div>
+            <div class="div">
+                <p class="p">Empowering Minds, Shaping Futures, Bridging the Gaps</p>
+                <p class="text-wrapper-2">Kashmir’s Best Placement Driven Learning Platform</p>
+            </div>
+            
+            <img class="edu-pi-logo" src="/uploads/img/logo.png" />
+        </div>
+    </div>
+    <div class="framee">
+      <div class="overlap-groupp">
+        <img class="rectangle" src="uploads/img/Rectangle4a.png" />
+          <img class="imgg" src="uploads/img/Rectangle 10.png" />
+          <div class="text-wrapperr">EduPi School</div>
+          <div class="divv"></div>
+          <p class="edupi-school-is-a">
+              EduPi School is a pioneering educational platform born from the heart of Kashmir. What began as a deep-rooted
+              exploration of the educational landscape in 2021, has evolved into a passionate endeavor to revolutionize the
+              way our students prepare for the future. <br />Our journey started with an unwavering commitment to
+              understand the challenges faced by our local students, particularly in the realms of science and technology.
+              Witnessing the gaps in their preparation for the professional world, we set out to build a solution that goes
+              beyond conventional learning. <br />EduPi School is a guiding solution for aspiring minds, offering a
+              comprehensive set of resources and guidance to equip students for the competitive job market. We acknowledge
+              the necessity of the current educational system and its shortcomings which cause the students to face
+              challenges in the modern professional environments. Our platform is designed to provide the students with the
+              essential skills and practical knowledge needed to secure coveted positions in leading companies.<br />What
+              sets us apart is our intimate understanding of the Kashmiri community and its unique needs. We are not just
+              another option, we are a homegrown initiative deeply invested in the success and growth of our students. By
+              prioritising affordability without compromising quality, we ensure that students have access to the best
+              possible opportunities for professional development.  <br />At EduPi School, we believe in empowering our
+              students with the tools and expertise they need to thrive in their careers. With our tailored programs,
+              personalised guidance, and a holistic approach to learning, we are redefining the narrative of education in
+              Kashmir and (in the coming future) beyond!
+          </p>
+      </div>
+  </div>
+
+  <div class="frameee">
+    <div class="overlap">
+        <img class="img" src="uploads/img/Rectangle10.png" />
+        <div class="text-wrapper">EduPi way of success!</div>
+        <div class="div">
+            <div class="group">
+                <div class="overlap-group">
+                    <div class="text-wrapper-2">Quality Education</div>
+                    <p class="p">
+                        Establishing partnerships with tech companies for job placements and career growth. Our focus is on
+                        connecting our students with leading industry players, providing them with valuable opportunities to
+                        kickstart their careers.
+                    </p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="overlap-group">
+                    <div class="text-wrapper-2">Job Opportunities</div>
+                    <p class="p">
+                        Our platform connects students with career opportunities to secure their future in the workforce.
+                    </p>
+                </div>
+            </div>
+            <div class="overlap-wrapper">
+                <div class="overlap-group">
+                    <div class="text-wrapper-2">Global Perspective</div>
+                    <p class="p">
+                        We offer a global perspective through international partnerships and exposure to diverse cultures.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<div class="frameeee">
+  <div class="overlap">
+    <img class="rectangle" src="uploads/img/Rectangle8.png" />
+    <img class="img" src="uploads/img/Rectangle4.png" />
+      
+      <div class="DS">
+          <div class="course-details">
+              <div class="full-stack">
+                  <div class="text-wrapper">Data Science</div>
+                  <p class="div">Start your career in data science and AI</p>
+              </div>
+              <div class="tech-logos">
+                <img class="html" src="uploads/img/Html5.png" />
+                <img class="css" src="uploads/img/Css.png" />
+                <img class="javascript" src="uploads/img/Javascript.png" />
+                <img class="react" src="uploads/img/React.png" />
+                <img class="nodejs" src="uploads/img/node.png" />
+                <img class="github" src="uploads/img/Github.png" />
+              </div>
+              <div class="specs">
+                  <div class="overlap-group-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">HTML &amp; CSS Fundamentals</div>
+                      </div>
+                  </div>
+                  <div class="overlap-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">Front-end with React.js</div>
+                      </div>
+                  </div>
+                  <div class="div-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">JavaScript Mastery</div>
+                      </div>
+                  </div>
+                  <div class="group-2">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <p class="text-wrapper-2">Back-end with Node.js, MongoDB, and&nbsp;&nbsp;Express.js</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlap-wrapper-2">
+                  <div class="learn-more-wrapper"><a href="#" class="learn-more">Explore more</a></div>
+              </div>
+          </div>
+          <div class="group-3">
+              <div class="overlap-group-wrapper-2">
+                  <div class="overlap-group-2"><div class="learn-more">Apply</div></div>
+              </div>
+              <div class="group-4">
+                  <p class="batch-duration-to">
+                      <span class="span">Batch Duration:<br /></span> <span class="text-wrapper-3">8 to 9 months</span>
+                  </p>
+                  <p class="starts-on-december">
+                      <span class="span">Starts on:<br /></span> <span class="text-wrapper-3">December 20, 2023</span>
+                  </p>
+                  <p class="timings">
+                      <span class="span">Timings:<br /></span>
+                      <span class="text-wrapper-3">8:00PM - 10:00PM IST<br />9:00PM - 11:00PM IST</span>
+                  </p>
+                  <p class="fees-less-than">
+                      <span class="span">Fees:<br /></span> <span class="text-wrapper-3">Less than 4000 per month</span>
+                  </p>
+              </div>
+              <div class="group-5">
+                  <div class="element-PLACEMENT-wrapper">
+                      <p class="element-PLACEMENT">
+                          <span class="text-wrapper-4">100%</span>
+                          <span class="span">&nbsp;</span>
+                          <span class="text-wrapper-3">PLACEMENT GUARANTEE</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="FSD">
+          <div class="course-details-2">
+              <div class="full-stack">
+                  <div class="text-wrapper">Full Stack Development</div>
+                  <p class="div">Start your career in web development</p>
+              </div>
+              <div class="tech-logos">
+                <img class="html" src="uploads/img/Html5.png" />
+                <img class="css" src="uploads/img/Css.png" />
+                <img class="javascript" src="uploads/img/Javascript.png" />
+                <img class="react" src="uploads/img/React.png" />
+                <img class="nodejs" src="uploads/img/node.png" />
+                <img class="github" src="uploads/img/Github.png" />
+              </div>
+              <div class="specs">
+                  <div class="overlap-group-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">HTML &amp; CSS Fundamentals</div>
+                      </div>
+                  </div>
+                  <div class="overlap-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">Front-end with React.js</div>
+                      </div>
+                  </div>
+                  <div class="div-wrapper">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <div class="text-wrapper-2">JavaScript Mastery</div>
+                      </div>
+                  </div>
+                  <div class="group-2">
+                      <div class="overlap-group">
+                          <div class="rectangle-2"></div>
+                          <img class="vector" src="uploads/img/Vector1.svg" />
+                          <p class="text-wrapper-2">Back-end with Node.js, MongoDB, and&nbsp;&nbsp;Express.js</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="overlap-wrapper-3">
+                  <div class="learn-more-wrapper"><div class="learn-more">Explore more</div></div>
+              </div>
+          </div>
+          <div class="group-6">
+              <div class="overlap-group-wrapper-2">
+                  <div class="overlap-group-2"><div class="learn-more">Apply</div></div>
+              </div>
+              <div class="group-4">
+                  <p class="batch-duration-to">
+                      <span class="span">Batch Duration:<br /></span> <span class="text-wrapper-3">8 to 9 months</span>
+                  </p>
+                  <p class="starts-on-december">
+                      <span class="span">Starts on:<br /></span> <span class="text-wrapper-3">December 20, 2023</span>
+                  </p>
+                  <p class="timings">
+                      <span class="span">Timings:<br /></span>
+                      <span class="text-wrapper-3">8:00PM - 10:00PM IST<br />9:00PM - 11:00PM IST</span>
+                  </p>
+                  <p class="fees-less-than">
+                      <span class="span">Fees:<br /></span> <span class="text-wrapper-3">Less than 4000 per month</span>
+                  </p>
+              </div>
+              <div class="group-5">
+                  <div class="element-PLACEMENT-wrapper">
+                      <p class="element-PLACEMENT">
+                          <span class="text-wrapper-4">100%</span>
+                          <span class="span">&nbsp;</span>
+                          <span class="text-wrapper-3">PLACEMENT GUARANTEE</span>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="text-wrapper-5">Our Programs</div>
+  </div>
+</div>
+<div class="frameeeee">
+    <div class="overlap">
+        <img class="rectangle" src="uploads/img/Rectangle10.png" />
+        <img class="img" src="uploads/img/Rectangle11.png" />
+        <img class="vector" src="uploads/img/Vector5.svg" />
+        <div class="apply-now">
+            <div class="overlap-group"><div class="learn-more">Apply now</div></div>
+        </div>
+        <div class="group">
+            <div class="div">
+                <div class="group-2">
+                    <div class="overlap-group-wrapper">
+                        <div class="div-wrapper"><div class="text-wrapper">Personal mentorship</div></div>
+                    </div>
+                    <img class="group-3" src="uploads/img/Vector1.svg" />
+                </div>
+                <div class="group-4">
+                    <div class="group-5">
+                        <div class="overlap-group-2">
+                            <p class="text-wrapper">Easy EMI options available with options as low as Rs.500</p>
+                        </div>
+                    </div>
+                    <img class="group-3" src="uploads/img/Vector1.svg" />
+                </div>
+                <div class="group-6">
+                    <div class="group-5">
+                        <div class="overlap-group-2">
+                            <p class="text-wrapper">Scholarship options from low income background learners</p>
+                        </div>
+                    </div>
+                    <img class="group-3" src="uploads/img/Vector1.svg" />
+                </div>
+                <div class="group-7">
+                    <div class="group-5">
+                        <div class="overlap-group-2"><p class="p">Admissions for learners from any background</p></div>
+                    </div>
+                    <img class="group-3" src="uploads/img/Vector1.svg" />
+                </div>
+                <div class="group-8">
+                    <div class="overlap-group-wrapper">
+                        <div class="div-wrapper">
+                            <p class="text-wrapper">Flexible course durations for Kashmiri learners</p>
+                        </div>
+                    </div>
+                    <img class="group-9" src="uploads/img/Vector1.svg" />
+                </div>
+                <div class="group-10">
+                    <div class="overlap-group-wrapper">
+                        <div class="div-wrapper"><p class="text-wrapper">Flexible class timings for Kashmiri learners</p></div>
+                    </div>
+                    <img class="group-9" src="uploads/img/Vector1.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="text-wrapper-2">Admission Flexibilities</div>
+        <div class="group-11">
+            <div class="group-12">
+                <div class="overlap-group-3">
+                    <div class="text-wrapper-3">Portfolio Building</div>
+                    <p class="text-wrapper-4">
+                        Establishing partnerships with tech companies for job placements and career growth. Our focus is on
+                        connecting our students with leading industry players, providing them with valuable opportunities to
+                        kickstart their careers.
+                    </p>
+                </div>
+            </div>
+            <div class="overlap-wrapper">
+                <div class="overlap-group-3">
+                    <div class="text-wrapper-3">Mock Interviews</div>
+                    <p class="text-wrapper-4">
+                        Establishing partnerships with tech companies for job placements and career growth. Our focus is on
+                        connecting our students with leading industry players, providing them with valuable opportunities to
+                        kickstart their careers.
+                    </p>
+                </div>
+            </div>
+            <div class="group-13">
+                <div class="overlap-group-3">
+                    <div class="text-wrapper-3">Career Assistance</div>
+                    <p class="text-wrapper-4">
+                        Establishing partnerships with tech companies for job placements and career growth. Our focus is on
+                        connecting our students with leading industry players, providing them with valuable opportunities to
+                        kickstart their careers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-wrapper-5">Guaranteed Placement Program</div>
+        <img class="vector-2" src="uploads/img/Vector2.svg" />
+        <img class="vector-3" src="uploads/img/Vector3.svg" />
+        <img class="vector-4" src="uploads/img/Vector4.svg" />
+    </div>
+</div>
+<div class="frameeeeee">
+    <div class="rights-footer">
+        <div class="overlap-group"><p class="text-wrapper">© 2023. EduPi School. All rights reserved.</p></div>
+    </div>
+    <div class="overlap">
+        <div class="div">
+            <img class="img" src="uploads/img/Facebook.png" />
+            <img class="img-2" src="uploads/img/Youtube.png" />
+            <img class="img-2" src="uploads/img/Instagram.png" />
+            <img class="img" src="uploads/img/Linkedin.png" />
+        </div>
+        <div class="join-us-now">
+            <div class="get-started-for-free-wrapper"><div class="get-started-for-free">Join us, now!</div></div>
+        </div>
+        <div class="edu-pi-branding">
+            <div class="overlap-2">
+                <div class="text-wrapper-2">EduPii School</div>
+                <img class="edu-light-blue-in" src="uploads/img/edulightblue1.png" />
+            </div>
+            <p class="p">Emmmpowering Kashmiri minds for global success</p>
+        </div>
+        <div class="site-map">
+            <div class="text-wrapper-3">Courses</div>
+            <div class="text-wrapper-4">Full Stack Web Developement</div>
+            <div class="text-wrapper-5">Data Science Program</div>
+            <div class="text-wrapper-6">Masterclass</div>
+            <div class="text-wrapper-7">Support</div>
+            <div class="text-wrapper-8">Contact us</div>
+            <div class="text-wrapper-9">Company</div>
+            <div class="text-wrapper-10">About us</div>
+            <div class="text-wrapper-11">Hire from us</div>
+            <div class="text-wrapper-12">Privacy policy</div>
+            <div class="text-wrapper-13">Terms of use</div>
+        </div>
+    </div>
+</div>
+
+<script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
